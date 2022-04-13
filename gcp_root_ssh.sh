@@ -18,3 +18,12 @@ Green="\033[32m"  && Red="\033[31m" && GreenBG="\033[42;37m" && RedBG="\033[41;3
 # 修改root 密码: bash脚本不能直接运行passwd，用户手工使用命令
 echo -e "${Red}如果需要修改root密码，请输入命令${GreenBG} passwd ${Font}${Green} 修改用户密码! ${Font}"
 echo
+
+# 开启完毕后自动启用bbr
+wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+
+#安装bbr
+1
+
+#等待安装完成后自动重启
+reboot
